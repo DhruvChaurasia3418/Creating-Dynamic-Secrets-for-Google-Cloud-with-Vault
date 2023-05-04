@@ -65,7 +65,7 @@ vault secrets enable gcp
  
 
 vault write gcp/config \
-credentials=@path/to/creds.json \
+credentials=@******************** \
  ttl=3600 \
  max_ttl=86400
  
