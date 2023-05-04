@@ -38,6 +38,12 @@ ui = true
 
 mkdir -p ./vault/data
 vault server -config=config.hcl
+
+
+
+                                                        new cloud shell
+--------------------------------------------------------------------------------------------------------------------------------------------------------                                                        
+                                                        
 export VAULT_ADDR='http://127.0.0.1:8200'
 vault operator init
 
