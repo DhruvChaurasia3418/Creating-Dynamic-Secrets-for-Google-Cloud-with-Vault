@@ -1,4 +1,4 @@
-export project_id = 
+export PROJECT_ID=
 
 curl -fsSL https://apt.releases.hashicorp.com/gpg | sudo apt-key add -
 
@@ -83,7 +83,7 @@ credentials=@path/to/creds.json \
 }
 
 vault write gcp/roleset/my-token-roleset \
-    project="$project_id" \
+    project="$PROJECT_ID" \
     secret_type="access_token"  \
     token_scopes="https://www.googleapis.com/auth/cloud-platform" \
     bindings=@bindings.hcl
