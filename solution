@@ -122,6 +122,19 @@ vault read gcp/roleset/my-key-roleset/key
 
  -------------------------------------------------------------------------------------------------------------------------------------------------------- 
  
+ export MAIL=
+ 
+ 
+ vault write gcp/static-account/my-token-account \
+    service_account_email="$MAIL" \
+    secret_type="access_token"  \
+    token_scopes="https://www.googleapis.com/auth/cloud-platform" \
+    bindings=@bindings.hcl
+
+vault write gcp/static-account/my-key-account \
+    service_account_email="$MAIL" \
+    secret_type="service_account_key"  \
+    bindings=@bindings.hcl
 
                
 
