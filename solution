@@ -75,7 +75,7 @@ credentials=@******************** \
                                                                      
                                                                      ADD code to file
  
- resource "buckets/$PROJECT_ID" {
+ resource "buckets/**********" {
   roles = [
     "roles/storage.objectAdmin",
     "roles/storage.legacyBucketReader",
